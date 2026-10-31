@@ -1,0 +1,137 @@
+{
+  "id": "earth-mars",
+  "version": 1,
+  "title": "Red Harbor",
+  "tagline": "Earth to a home on Mars, with nothing but real engineering.",
+  "summary": "No warp, no aliens. A small crew of AI units and one human commander build a ship in Earth orbit, cross to Mars on engines we could build, and spend two years finding the place to stay.",
+  "origin": "Earth",
+  "names": { "main": "Credits", "slow": "Science", "records": "Milestones", "crew": ["Flight AI", "Systems AI", "Science AI"] },
+  "layers": [
+    {
+      "name": "Leaving the cradle",
+      "drive": "Chemical rockets",
+      "intro": "Everything starts with getting off the ground. Then the ship has to be built where nothing falls.",
+      "industry": "Launch contracts",
+      "research": ["Reusable boosters", "Orbital refuelling", "Radiation shielding", "Life support loops", "In-space welding", "Lunar water"],
+      "steps": [
+        { "name": "Kármán line", "kind": "boundary", "distance": [100, "km"], "rung": 1, "beat": "The edge of space. The sky goes black.", "fact": "The usual line where space begins, 100 km up." },
+        { "name": "ISS orbit", "kind": "orbit", "distance": [410, "km"], "rung": 1, "beat": "Dock with the station and pick up your first AI unit.", "fact": "The ISS moves at about 7.7 km/s." },
+        { "name": "Hubble Space Telescope", "kind": "spacecraft", "distance": [540, "km"], "rung": 1, "beat": "A service call for the old telescope pays for the next launch.", "fact": "Hubble has orbited Earth since 1990." },
+        { "name": "Inner Van Allen belt", "kind": "radiation belt", "distance": [3000, "km"], "rung": 1, "beat": "Radiation spikes. Shield the electronics or lose them.", "fact": "A ring of trapped protons from about 1,000 to 6,000 km up." },
+        { "name": "GPS constellation", "kind": "orbit", "distance": [20200, "km"], "rung": 1, "beat": "The navigation satellites everyone on Earth relies on.", "fact": "GPS satellites orbit twice a day at 20,200 km." },
+        { "name": "Outer Van Allen belt", "kind": "radiation belt", "distance": [25000, "km"], "rung": 1, "beat": "Electrons this time. The Science AI starts mapping the storm.", "fact": "Trapped electrons, roughly 13,000 to 60,000 km up." },
+        { "name": "Geostationary belt", "kind": "orbit", "distance": [35786, "km"], "rung": 1, "beat": "The shipyard goes here, above one spot on Earth.", "fact": "Satellites here orbit once a day and seem to hang still." },
+        { "name": "Moon", "kind": "moon", "distance": [384400, "km"], "rung": 1, "beat": "First crew around the Moon in decades. The ship needs its water.", "fact": "Apollo crews took about three days to get here." },
+        { "name": "Shackleton crater", "kind": "crater", "distance": [384400, "km"], "leg": [1737, "km"], "rung": 1, "beat": "Ice in permanent shadow. Fuel and air for Mars.", "fact": "Its floor at the lunar south pole never sees sunlight." },
+        { "name": "Earth–Moon L2", "kind": "Lagrange point", "distance": [448900, "km"], "rung": 1, "beat": "The Mars ship takes shape behind the Moon.", "fact": "A balance point about 61,500 km beyond the Moon." },
+        { "name": "Sun–Earth L1", "kind": "Lagrange point", "distance": [1.5e6, "km"], "rung": 1, "beat": "A shakedown flight to the solar observatories.", "fact": "Solar observatories like SOHO watch the Sun from here." },
+        { "name": "Kamo'oalewa", "kind": "quasi-satellite", "distance": [1.5e7, "km"], "rung": 1, "beat": "A test run to Earth's little companion. The ship is ready. The window to Mars opens.", "fact": "A small asteroid that circles the Sun near Earth; it may be a piece of the Moon." }
+      ]
+    },
+    {
+      "name": "The crossing",
+      "drive": "Nuclear-thermal and plasma (VASIMR-class)",
+      "intro": "The launch window opens once every 26 months. Miss it and you wait. You don't miss it.",
+      "industry": "Asteroid prospecting",
+      "research": ["Nuclear reactors", "Plasma thrusters", "Closed-loop farms", "Bone-loss countermeasures", "Deep-space comms", "Aerobraking"],
+      "steps": [
+        { "name": "Apophis", "kind": "asteroid", "distance": [0.1, "AU"], "rung": 2, "beat": "The asteroid that once scared everyone. A good place to test the drill.", "fact": "It will pass closer than geostationary satellites in April 2029." },
+        { "name": "Bennu", "kind": "asteroid", "distance": [0.15, "AU"], "rung": 2, "beat": "A rubble pile. The surface is so loose the sampler sinks in.", "fact": "OSIRIS-REx brought a sample of Bennu to Earth in 2023." },
+        { "name": "Ryugu", "kind": "asteroid", "distance": [0.2, "AU"], "rung": 2, "beat": "Carbon and water locked in rock: fuel for later.", "fact": "Hayabusa2 returned samples of Ryugu in 2020." },
+        { "name": "Didymos and Dimorphos", "kind": "binary asteroid", "distance": [0.25, "AU"], "rung": 2, "beat": "You pass the moonlet humans once pushed off course.", "fact": "NASA's DART changed Dimorphos's orbit in 2022." },
+        { "name": "Itokawa", "kind": "asteroid", "distance": [0.3, "AU"], "rung": 2, "beat": "A peanut-shaped asteroid. Two rubble piles stuck together.", "fact": "The first asteroid sampled and returned, by Hayabusa in 2010." },
+        { "name": "Phaethon", "kind": "asteroid", "distance": [0.38, "AU"], "rung": 2, "beat": "The rock that feeds the Geminid meteors. Its trail pings your shields.", "fact": "Parent body of the Geminid meteor shower." },
+        { "name": "Unnamed rubble-pile asteroid", "kind": "asteroid", "distance": [0.45, "AU"], "rung": 2, "catalogued": false, "beat": "No name, no catalogue entry. You name it after your first crew member.", "fact": "Most near-Earth asteroids smaller than 100 m are still undiscovered." },
+        { "name": "Eros", "kind": "asteroid", "distance": [0.52, "AU"], "rung": 2, "beat": "A big, old rock. NEAR Shoemaker is still sitting on it.", "fact": "NEAR Shoemaker landed on Eros in 2001." },
+        { "name": "Ganymed", "kind": "asteroid", "distance": [0.6, "AU"], "rung": 2, "beat": "The largest near-Earth asteroid. Enough metal for a city.", "fact": "About 35 km across, the biggest near-Earth asteroid." },
+        { "name": "Solar storm", "kind": "coronal mass ejection", "distance": [0.7, "AU"], "rung": 2, "catalogued": false, "beat": "A storm from the Sun. Everyone hides in the water-shielded core for three days.", "fact": "Coronal mass ejections cross the inner Solar System many times a year." },
+        { "name": "Unnamed Mars-crossing asteroid", "kind": "asteroid", "distance": [0.82, "AU"], "rung": 2, "catalogued": false, "beat": "A last mining stop before Mars.", "fact": "Thousands of asteroids cross Mars's orbit; many are uncatalogued." },
+        { "name": "Mars sphere of influence", "kind": "boundary", "distance": [0.95, "AU"], "rung": 2, "beat": "Mars's gravity takes over. Ahead, a red disc grows every hour.", "fact": "Mars dominates gravity within about 577,000 km." }
+      ]
+    },
+    {
+      "name": "Arrival",
+      "drive": "Aerobraking and landers",
+      "intro": "Getting to Mars is half the trip. Stopping there is the other half.",
+      "industry": "Orbital relays",
+      "research": ["Entry heat shields", "Supersonic retropropulsion", "Moon-base logistics", "Dust-storm forecasting", "Landing precision", "Rover habitats"],
+      "steps": [
+        { "name": "Deimos", "kind": "moon", "distance": [0.95, "AU"], "leg": [553000, "km"], "rung": 1, "beat": "The outer moon. Quiet and dark: a perfect depot.", "fact": "Deimos is only about 12 km across." },
+        { "name": "Areostationary orbit", "kind": "orbit", "distance": [0.9500001, "AU"], "leg": [3000, "km"], "rung": 1, "beat": "Relay satellites go up so the surface can always talk to Earth.", "fact": "About 17,000 km above Mars, an orbit lasts one Martian day." },
+        { "name": "Phobos", "kind": "moon", "distance": [0.9500002, "AU"], "leg": [11000, "km"], "rung": 1, "beat": "The inner moon is falling toward Mars, slowly. You build a base anyway.", "fact": "Phobos will break up or crash into Mars in about 50 million years." },
+        { "name": "Stickney crater", "kind": "crater", "distance": [0.9500003, "AU"], "leg": [11, "km"], "rung": 1, "beat": "The crater that nearly shattered Phobos. Shelter from radiation.", "fact": "About 9 km wide, on a moon only 22 km across." },
+        { "name": "Mars Reconnaissance Orbiter", "kind": "spacecraft", "distance": [0.9500004, "AU"], "leg": [6000, "km"], "rung": 1, "beat": "An old orbiter still taking pictures. Its maps pick your landing sites.", "fact": "Its HiRISE camera can see objects about a metre across." },
+        { "name": "Mars entry interface", "kind": "boundary", "distance": [0.9500005, "AU"], "leg": [175, "km"], "rung": 1, "beat": "Seven minutes of terror. The heat shield glows.", "fact": "Landers hit the top of the atmosphere at about 125 km altitude." },
+        { "name": "Jezero Crater", "kind": "crater", "distance": [0.9500006, "AU"], "leg": [900, "km"], "rung": 1, "beat": "Touchdown in an ancient lake. Perseverance's tracks are still here.", "fact": "Once a lake with a river delta, now explored by Perseverance." },
+        { "name": "Isidis Planitia", "kind": "plain", "distance": [0.9500007, "AU"], "leg": [600, "km"], "rung": 1, "beat": "Beagle 2 lies here, solar panels half open. You finish its mission.", "fact": "Beagle 2 landed here in 2003; it was found in 2015." },
+        { "name": "Gale Crater", "kind": "crater", "distance": [0.9500008, "AU"], "leg": [2900, "km"], "rung": 1, "beat": "Curiosity's mountain, layer after layer of Mars's history.", "fact": "Curiosity has been climbing Mount Sharp since 2014." },
+        { "name": "Elysium Planitia", "kind": "plain", "distance": [0.9500009, "AU"], "leg": [600, "km"], "rung": 1, "beat": "InSight felt marsquakes here. You feel one too.", "fact": "InSight recorded over 1,300 marsquakes." },
+        { "name": "Gusev Crater", "kind": "crater", "distance": [0.950001, "AU"], "leg": [2100, "km"], "rung": 1, "beat": "Spirit's last stand, stuck in the sand.", "fact": "The rover Spirit explored Gusev from 2004 to 2010." },
+        { "name": "Meridiani Planum", "kind": "plain", "distance": [0.9500011, "AU"], "leg": [4500, "km"], "rung": 1, "beat": "Opportunity's grave, 45 km from where it landed. You leave a note.", "fact": "Opportunity drove more than a marathon here." }
+      ]
+    },
+    {
+      "name": "The great features",
+      "drive": "Pressurised rovers and hoppers",
+      "intro": "The biggest volcano, the deepest canyon, the widest basin in the Solar System. You go to see them all.",
+      "industry": "Regolith factories",
+      "research": ["Dust-proof seals", "Hopper engines", "Cave mapping", "Methane fuel", "Long-range rovers", "Marsquake sensing"],
+      "steps": [
+        { "name": "Valles Marineris", "kind": "canyon", "distance": [0.9500012, "AU"], "leg": [2700, "km"], "rung": 1, "beat": "A canyon as long as the United States is wide.", "fact": "About 4,000 km long and up to 7 km deep." },
+        { "name": "Noctis Labyrinthus", "kind": "canyon network", "distance": [0.9500013, "AU"], "leg": [1500, "km"], "rung": 1, "beat": "A maze of canyons. Mist forms at dawn.", "fact": "A tangle of steep valleys at the west end of Valles Marineris." },
+        { "name": "Arsia Mons", "kind": "volcano", "distance": [0.9500014, "AU"], "leg": [900, "km"], "rung": 1, "beat": "Dark holes in its flank: lava-tube skylights. A roof against radiation.", "fact": "Skylight pits on its slopes may lead into caves." },
+        { "name": "Pavonis Mons", "kind": "volcano", "distance": [0.9500015, "AU"], "leg": [700, "km"], "rung": 1, "beat": "On the equator, perfect for a future space elevator.", "fact": "Sits almost exactly on the Martian equator." },
+        { "name": "Ascraeus Mons", "kind": "volcano", "distance": [0.9500016, "AU"], "leg": [700, "km"], "rung": 1, "beat": "Tallest of the three Tharsis giants.", "fact": "Rises about 18 km above the surrounding plain." },
+        { "name": "Olympus Mons", "kind": "volcano", "distance": [0.9500017, "AU"], "leg": [1600, "km"], "rung": 1, "beat": "The summit is above most of the atmosphere. Stars at noon.", "fact": "About 22 km high, the tallest volcano known." },
+        { "name": "Tempe Terra", "kind": "highland", "distance": [0.9500018, "AU"], "leg": [2200, "km"], "rung": 1, "beat": "Old cracked crust. Ice hides in the shadows.", "fact": "An ancient highland split by faults." },
+        { "name": "Chryse Planitia", "kind": "plain", "distance": [0.9500019, "AU"], "leg": [1800, "km"], "rung": 1, "beat": "Viking 1 still stands here, facing the sunset it photographed.", "fact": "Viking 1 landed here in 1976." },
+        { "name": "Ares Vallis", "kind": "valley", "distance": [0.950002, "AU"], "leg": [800, "km"], "rung": 1, "beat": "An old flood channel. Sojourner's tiny tracks.", "fact": "Mars Pathfinder and Sojourner landed here in 1997." },
+        { "name": "Cydonia", "kind": "region", "distance": [0.9500021, "AU"], "leg": [1700, "km"], "rung": 1, "beat": "The 'face' turns out to be a hill. The crew laughs for the first time in weeks.", "fact": "Home of the famous 'Face on Mars', a mesa seen in 1976." },
+        { "name": "Utopia Planitia", "kind": "plain", "distance": [0.9500022, "AU"], "leg": [3500, "km"], "rung": 1, "beat": "Buried ice the size of a lake. Water for a town.", "fact": "Radar found a buried ice deposit as big as Lake Superior." },
+        { "name": "Hellas Planitia", "kind": "impact basin", "distance": [0.9500023, "AU"], "leg": [4200, "km"], "rung": 1, "beat": "The deepest basin. The air is thickest here, almost enough for liquid water.", "fact": "About 7 km deep and 2,300 km across." }
+      ]
+    },
+    {
+      "name": "Water and shelter",
+      "drive": "Pressurised rovers and hoppers",
+      "intro": "A home needs water, shelter from radiation and something to build with. The search narrows.",
+      "industry": "Ice mines",
+      "research": ["Ice drilling", "Perchlorate cleaning", "Greenhouse domes", "Radiation burrows", "Oxygen from CO2", "Long-term health"],
+      "steps": [
+        { "name": "Argyre Planitia", "kind": "impact basin", "distance": [0.9500024, "AU"], "leg": [2700, "km"], "rung": 1, "beat": "Old glaciers may lie under the dust here.", "fact": "A giant impact basin in the southern highlands." },
+        { "name": "Holden crater", "kind": "crater", "distance": [0.9500025, "AU"], "leg": [1500, "km"], "rung": 1, "beat": "Lakebeds stacked like pages.", "fact": "Its floor holds layered sediments from an ancient lake." },
+        { "name": "Eberswalde delta", "kind": "river delta", "distance": [0.9500026, "AU"], "leg": [100, "km"], "rung": 1, "beat": "A river once flowed here and dropped its mud in a fan.", "fact": "One of the clearest ancient river deltas on Mars." },
+        { "name": "Mawrth Vallis", "kind": "valley", "distance": [0.9500027, "AU"], "leg": [2600, "km"], "rung": 1, "beat": "Clay layers. Water sat here for a long time.", "fact": "One of the richest clay deposits on Mars." },
+        { "name": "Arabia Terra", "kind": "highland", "distance": [0.9500028, "AU"], "leg": [1200, "km"], "rung": 1, "beat": "Some of the oldest ground on Mars.", "fact": "Possibly the oldest terrain on the planet." },
+        { "name": "Deuteronilus Mensae", "kind": "mesa field", "distance": [0.9500029, "AU"], "leg": [1500, "km"], "rung": 1, "beat": "Glaciers under rubble, flowing a centimetre a year.", "fact": "Radar shows ice-rich glaciers buried under debris." },
+        { "name": "Protonilus Mensae", "kind": "mesa field", "distance": [0.950003, "AU"], "leg": [700, "km"], "rung": 1, "beat": "More buried ice, closer to the surface.", "fact": "Mesas with debris-covered glaciers between them." },
+        { "name": "Phlegra Montes", "kind": "mountain range", "distance": [0.9500031, "AU"], "leg": [2600, "km"], "rung": 1, "beat": "Ice at mid-latitudes, where the sun still warms the panels.", "fact": "Ice-rich ground shallow enough to dig." },
+        { "name": "Arcadia Planitia", "kind": "plain", "distance": [0.9500032, "AU"], "leg": [1900, "km"], "rung": 1, "beat": "Ice a few metres down and flat ground. Your top candidate.", "fact": "A favourite candidate landing region for human missions, for its shallow ice." },
+        { "name": "Korolev crater", "kind": "crater", "distance": [0.9500033, "AU"], "leg": [3300, "km"], "rung": 1, "beat": "A crater filled with ice, 1.8 km thick.", "fact": "Holds about 2,200 cubic kilometres of water ice." },
+        { "name": "Vastitas Borealis", "kind": "plain", "distance": [0.9500034, "AU"], "leg": [800, "km"], "rung": 1, "beat": "The northern lowlands. Perhaps an ocean once.", "fact": "Some scientists think an ocean filled these lowlands." },
+        { "name": "Planum Boreum", "kind": "polar cap", "distance": [0.9500035, "AU"], "leg": [1200, "km"], "rung": 1, "beat": "The north pole: layered ice holding millions of years of climate.", "fact": "The north polar cap is about 3 km thick." }
+      ]
+    },
+    {
+      "name": "Red Harbor",
+      "drive": "Pressurised rovers and hoppers",
+      "intro": "Two years from Earth. Time to choose where humanity stays.",
+      "industry": "Settlement works",
+      "research": ["Habitat printing", "Closed ecosystems", "Martian concrete", "Local fuel plant", "Child-safe radiation levels", "Harbor charter"],
+      "steps": [
+        { "name": "Chasma Boreale", "kind": "canyon", "distance": [0.9500036, "AU"], "leg": [500, "km"], "rung": 1, "beat": "A canyon cut into the polar cap itself.", "fact": "A valley about 500 km long in the north polar ice." },
+        { "name": "Olympia Undae", "kind": "dune field", "distance": [0.9500037, "AU"], "leg": [600, "km"], "rung": 1, "beat": "Gypsum dunes. Water once evaporated here.", "fact": "The largest dune field on Mars, rich in gypsum." },
+        { "name": "Medusae Fossae", "kind": "formation", "distance": [0.9500038, "AU"], "leg": [5000, "km"], "rung": 1, "beat": "Soft rock carved by wind. Maybe ice inside.", "fact": "Radar suggests it may hold enough ice to cover Mars 1.5 m deep." },
+        { "name": "Nili Fossae", "kind": "trough", "distance": [0.9500039, "AU"], "leg": [4500, "km"], "rung": 1, "beat": "Methane traces. Something, someday, made gas here.", "fact": "Rich in clays and carbonates; methane was reported nearby." },
+        { "name": "Syrtis Major", "kind": "volcanic plain", "distance": [0.950004, "AU"], "leg": [600, "km"], "rung": 1, "beat": "The dark patch seen from Earth by the first telescopes.", "fact": "The first Martian feature mapped from Earth, in 1659." },
+        { "name": "Hesperia Planum", "kind": "volcanic plain", "distance": [0.9500041, "AU"], "leg": [2100, "km"], "rung": 1, "beat": "Old lava plains that set the clock for Mars's history.", "fact": "It names a whole era of Martian geology, the Hesperian." },
+        { "name": "Promethei Terra", "kind": "highland", "distance": [0.9500042, "AU"], "leg": [1800, "km"], "rung": 1, "beat": "Lobate debris aprons. Ice under every slope.", "fact": "Its craters hold debris-covered glaciers." },
+        { "name": "Planum Australe", "kind": "polar cap", "distance": [0.9500043, "AU"], "leg": [2500, "km"], "rung": 1, "beat": "The south cap, frozen carbon dioxide over water ice.", "fact": "Its water ice could cover Mars about 11 m deep." },
+        { "name": "Subglacial lake candidate", "kind": "radar anomaly", "distance": [0.9500044, "AU"], "leg": [400, "km"], "rung": 1, "beat": "A bright radar echo under the ice. You drill. The answer is complicated.", "fact": "A 2018 radar signal hinted at liquid water under the south cap; it's still debated." },
+        { "name": "Lava tube cave", "kind": "cave", "distance": [0.9500045, "AU"], "leg": [3300, "km"], "rung": 1, "catalogued": false, "beat": "A tube big enough for a town, roofed in rock. The radiation drops to Earth levels.", "fact": "Mars has many skylight pits; lava tubes like Earth's are expected beneath them." },
+        { "name": "Pavonis cave entrance", "kind": "cave", "distance": [0.9500046, "AU"], "leg": [300, "km"], "rung": 1, "catalogued": false, "beat": "The first permanent airlock goes in.", "fact": "Pit chains on Tharsis volcanoes are likely collapsed lava tubes." },
+        { "name": "Red Harbor", "kind": "settlement site", "distance": [0.9500047, "AU"], "leg": [50, "km"], "rung": 1, "catalogued": false, "beat": "Ice nearby, rock overhead, sunlight on the panels. You name the place and send the message home: 'Come.'", "fact": "Built inside a real-type Martian lava tube near Tharsis." }
+      ]
+    }
+  ]
+}

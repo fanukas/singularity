@@ -4,11 +4,11 @@ Agreed 2026-10-31. A **standalone engine** for making real-scale idle space game
 
 ## 1. One fixed skeleton
 1. Every path has **exactly the same skeleton**: the same number of layers, steps, currencies and mechanics, in the same order.
-2. Size: **6 layers × 8 steps = 48 steps minimum**, aimed at about 2 years of play. More steps are always welcome (more content to fill, even if skinned); the final count is fixed before the first path ships and then never changes.
+2. Size: **6 layers × 12 steps = 72 steps**, about 2 years of play (picked 2026-10-31; numbers in `docs/decisions.md`). Fixed before the first path ships, then never changes.
 3. Step N means the same progress on every path. A trip from Earth to Mars and a trip from Earth to MoM-z14 take the same real time and the same steps.
 
 ## 2. Only formulas change
-1. A path changes distances, speeds, costs and rates, never the structure.
+1. A path changes distances and the speeds shown, never the structure. Costs and rates are the same on every path, so pacing is identical by construction.
 2. The pacing sim solves each path's formulas so every step takes the same real time as on the reference curve. A path that doesn't fit within tolerance isn't shippable.
 3. Time is 1:1 and distances are real on every path. Nothing moves faster than light unless the path declares it on the fiction ladder (section 4).
 
@@ -44,9 +44,7 @@ Players may start on different paths and play their own world. Because the skele
 2. CI validates every path: all steps filled with real objects, rung declared for every mechanic, no faster-than-light below its declared rung, sim within tolerance of the reference curve.
 
 ## Open
-1. Final step count (48 minimum).
-2. Server, save format and anti-cheat for the engine (far-reaching; decide with the save format).
-3. The reference pacing curve (time per step).
+1. Server, save format and anti-cheat for the engine (far-reaching; decide with the save format).
 
 ## Candidate first path: Earth → MoM-z14
 Mentor: the Senders (messages only, each older). Villain: the Concord, Earth's winning AI, whose hunter ship trails months behind. Heart: the small AI crew. Six layers:

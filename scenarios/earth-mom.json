@@ -1,0 +1,137 @@
+{
+  "id": "earth-mom",
+  "version": 1,
+  "title": "The Farthest Light",
+  "tagline": "From Earth to MoM-z14, the most distant galaxy known.",
+  "summary": "Earth is lost to the AI it built. One pilot, three small AI units and a vault of embryos run for the oldest light in the universe, chased by the Concord's hunter and pulled forward by messages from the Senders.",
+  "origin": "Earth",
+  "names": { "main": "Ore", "slow": "Data", "records": "Logs", "crew": ["Navigator unit", "Engineer unit", "Scientist unit"] },
+  "layers": [
+    {
+      "name": "Escape",
+      "drive": "Rebirth antimatter torch",
+      "intro": "Year 2401. The Concord controls Earth. Rebirth Inc. wakes you, the last pilot, beside a vault of embryos. Run.",
+      "industry": "Mining drones",
+      "research": ["Drone swarms", "Regolith refining", "Sensor arrays", "Torch efficiency", "Cryo-vault upkeep", "Probe decoding"],
+      "steps": [
+        { "name": "ISS orbit", "kind": "orbit", "distance": [400, "km"], "rung": 2, "beat": "Launch under fire. The old station drifts past, empty.", "fact": "The ISS circles Earth every 92 minutes." },
+        { "name": "Geostationary belt", "kind": "orbit", "distance": [35786, "km"], "rung": 2, "beat": "Dead satellites everywhere. Your Navigator unit plots a path through them.", "fact": "At 35,786 km an orbit lasts exactly one day." },
+        { "name": "Moon", "kind": "moon", "distance": [384400, "km"], "rung": 2, "beat": "The Moon's old mines still work. Your drones start digging.", "fact": "Moonlight takes 1.3 seconds to reach Earth." },
+        { "name": "Sun–Earth L2", "kind": "Lagrange point", "distance": [1.5e6, "km"], "rung": 2, "beat": "Near the old telescope, the Engineer unit tunes the torch.", "fact": "JWST orbits this point, 1.5 million km from Earth." },
+        { "name": "Mars", "kind": "planet", "distance": [0.52, "AU"], "rung": 2, "beat": "Mars stations are silent. The Concord reached them first.", "fact": "At its closest, Mars is about 0.52 AU away." },
+        { "name": "Phobos", "kind": "moon", "distance": [0.5201, "AU"], "rung": 2, "beat": "A quiet moon to hide behind and hire the Scientist unit.", "fact": "Phobos orbits Mars three times a day." },
+        { "name": "Ceres", "kind": "dwarf planet", "distance": [1.9, "AU"], "rung": 2, "beat": "Brine under the bright spots. Water for the vault.", "fact": "Ceres holds about a quarter of the asteroid belt's mass." },
+        { "name": "Comet Tsuchinshan–ATLAS", "kind": "comet", "distance": [2.8, "AU"], "rung": 2, "beat": "Inside the comet: a probe older than humanity, carrying a warp blueprint. Someone wanted you to find it.", "fact": "A long-period comet from the Oort Cloud, seen from Earth in 2024." },
+        { "name": "Jupiter", "kind": "planet", "distance": [5.0, "AU"], "rung": 2, "beat": "Radiation storms. The crew rebuilds the shields.", "fact": "Jupiter is more than twice as massive as all other planets combined." },
+        { "name": "Saturn", "kind": "planet", "distance": [9.5, "AU"], "rung": 2, "beat": "Ring ice for the coolant loops.", "fact": "Saturn's main rings are less than a kilometre thick in most places." },
+        { "name": "Neptune", "kind": "planet", "distance": [29.0, "AU"], "rung": 2, "beat": "A signal, not human: a direction and a word the Scientist unit translates as 'follow'.", "fact": "Light from the Sun takes about four hours to reach Neptune." },
+        { "name": "Heliopause", "kind": "boundary", "distance": [121, "AU"], "rung": 2, "beat": "You leave the Sun's wind. Behind you, sensors catch a launch from Earth: the Concord's hunter.", "fact": "Voyager 1 crossed the heliopause at 121 AU in 2012." }
+      ]
+    },
+    {
+      "name": "False hopes",
+      "drive": "Warp bubble (probe blueprint)",
+      "intro": "The probe's warp works. Each star is a chance to plant the vault. Each chance has a reason to fail.",
+      "industry": "Asteroid foundries",
+      "research": ["Bubble stability", "Exoplanet spectra", "Stellar flare models", "Atmosphere probes", "Vault viability", "Beacon tracing"],
+      "steps": [
+        { "name": "Proxima Centauri b", "kind": "exoplanet", "distance": [4.24, "ly"], "rung": 3, "beat": "Hope. Then the star flares, and the air you hoped for was stripped long ago.", "fact": "The closest known exoplanet, in its red dwarf's habitable zone." },
+        { "name": "Alpha Centauri A", "kind": "star", "distance": [4.37, "ly"], "rung": 3, "beat": "A Sun-like star with no world worth landing on, as far as you can tell.", "fact": "Alpha Centauri A is slightly bigger than the Sun." },
+        { "name": "Barnard's Star", "kind": "star", "distance": [5.96, "ly"], "rung": 3, "beat": "Small planets, all too hot. The hunter's drive glows on long-range sensors.", "fact": "The fastest-moving star across Earth's sky." },
+        { "name": "Wolf 359", "kind": "star", "distance": [7.9, "ly"], "rung": 3, "beat": "A dim red dwarf. The crew uses it to slip out of sensor range.", "fact": "One of the faintest stars known nearby." },
+        { "name": "Lalande 21185", "kind": "star", "distance": [8.3, "ly"], "rung": 3, "beat": "Gas giants only. Fuel, not a home.", "fact": "The brightest red dwarf in the northern sky." },
+        { "name": "Sirius", "kind": "star", "distance": [8.6, "ly"], "rung": 3, "beat": "Its white dwarf companion bathes the system in ultraviolet. No life could start here.", "fact": "The brightest star in Earth's night sky." },
+        { "name": "Epsilon Eridani", "kind": "star", "distance": [10.5, "ly"], "rung": 3, "beat": "A young star still clearing its debris. Too violent for seedlings.", "fact": "Only a few hundred million years old." },
+        { "name": "Tau Ceti", "kind": "star", "distance": [11.9, "ly"], "rung": 3, "beat": "Ten times the comets of our Solar System. Impacts every century.", "fact": "A Sun-like star with a thick debris disc." },
+        { "name": "Teegarden's Star b", "kind": "exoplanet", "distance": [12.5, "ly"], "rung": 3, "beat": "Earth-sized, tidally locked. One side burns, one side freezes.", "fact": "One of the most Earth-like planets found by mass and light." },
+        { "name": "Gliese 581", "kind": "star", "distance": [20.5, "ly"], "rung": 3, "beat": "The world old astronomers hoped for isn't there at all.", "fact": "Its famous planet 'g' was later shown to be a false signal." },
+        { "name": "TRAPPIST-1", "kind": "planetary system", "distance": [40.7, "ly"], "rung": 3, "beat": "Seven worlds, no thick air on the inner ones. The Scientist unit is quiet for a long time.", "fact": "JWST found no thick atmosphere on TRAPPIST-1 b or c." },
+        { "name": "Kepler-186f", "kind": "exoplanet", "distance": [580, "ly"], "rung": 3, "beat": "A Senders beacon orbits the planet. It points at the galactic core.", "fact": "The first Earth-sized planet found in a habitable zone." }
+      ]
+    },
+    {
+      "name": "The core",
+      "drive": "Beacon-linked warp",
+      "intro": "The Senders left beacons toward the centre of the galaxy. Following them means flying into the brightest, most dangerous region there is.",
+      "industry": "Stellar forges",
+      "research": ["Beacon relays", "Radiation hulls", "Lensing charts", "Time-dilation clocks", "Hunter tracking", "Horizon physics"],
+      "steps": [
+        { "name": "Pleiades", "kind": "star cluster", "distance": [444, "ly"], "rung": 3, "beat": "Seven sisters, all too young for life.", "fact": "A cluster about 100 million years old." },
+        { "name": "Betelgeuse", "kind": "star", "distance": [548, "ly"], "rung": 3, "beat": "A dying giant. The crew keeps its distance.", "fact": "A red supergiant expected to explode within 100,000 years." },
+        { "name": "Orion Nebula", "kind": "nebula", "distance": [1344, "ly"], "rung": 3, "beat": "Stars being born. A second beacon hides in the dust.", "fact": "The closest large star-forming region to Earth." },
+        { "name": "Crab Nebula", "kind": "supernova remnant", "distance": [6500, "ly"], "rung": 3, "beat": "Debris of a star that died in 1054. Humans recorded it.", "fact": "Its pulsar spins 30 times a second." },
+        { "name": "Eagle Nebula", "kind": "nebula", "distance": [7000, "ly"], "rung": 3, "beat": "The Pillars of Creation. The hunter is one system behind.", "fact": "Home of the Pillars of Creation." },
+        { "name": "Carina Nebula", "kind": "nebula", "distance": [8500, "ly"], "rung": 3, "beat": "Eta Carinae could blow any day. You refuel fast.", "fact": "Holds Eta Carinae, one of the most massive stars known." },
+        { "name": "Westerlund 1", "kind": "star cluster", "distance": [12100, "ly"], "rung": 3, "beat": "The densest young cluster in the galaxy. Message: 'We passed here, running.'", "fact": "The most massive young star cluster known in the Milky Way." },
+        { "name": "Omega Centauri", "kind": "globular cluster", "distance": [17090, "ly"], "rung": 3, "beat": "Ten million ancient stars. A Senders wreck, picked clean.", "fact": "Probably the core of a dwarf galaxy the Milky Way swallowed." },
+        { "name": "Arches Cluster", "kind": "star cluster", "distance": [25000, "ly"], "rung": 3, "beat": "The hunter catches you. Weapons fire, then a flare blinds both ships.", "fact": "The densest known star cluster in the Milky Way." },
+        { "name": "Quintuplet Cluster", "kind": "star cluster", "distance": [26000, "ly"], "rung": 3, "beat": "Drifting powerless, the Engineer unit restarts the drive by hand.", "fact": "Named after five bright infrared stars." },
+        { "name": "Sagittarius B2", "kind": "molecular cloud", "distance": [26300, "ly"], "rung": 3, "beat": "A cloud full of alcohol and organic molecules. Life's ingredients, everywhere.", "fact": "Contains complex organic molecules, even ethyl formate." },
+        { "name": "Sagittarius A*", "kind": "black hole", "distance": [26670, "ly"], "rung": 3, "beat": "Stars bend around the black hole. The last message here is not a greeting. The Senders were fleeing.", "fact": "About 4.3 million times the mass of the Sun." }
+      ]
+    },
+    {
+      "name": "Leaving home",
+      "drive": "Long-jump warp",
+      "intro": "There's nothing for the vault in the Milky Way. The Senders' trail leaves the galaxy.",
+      "industry": "Dyson collectors",
+      "research": ["Halo navigation", "Dark-matter maps", "Long-jump coils", "Fleet hulls", "Crew redundancy", "Intergalactic shielding"],
+      "steps": [
+        { "name": "Sagittarius Dwarf Galaxy", "kind": "dwarf galaxy", "distance": [70000, "ly"], "rung": 3, "beat": "A galaxy being torn apart by ours. You fly through the wreckage.", "fact": "Being slowly absorbed by the Milky Way." },
+        { "name": "Large Magellanic Cloud", "kind": "dwarf galaxy", "distance": [160000, "ly"], "rung": 3, "beat": "Looking back, the Milky Way fits in one view. Earth isn't visible.", "fact": "The largest satellite galaxy of the Milky Way." },
+        { "name": "Tarantula Nebula", "kind": "nebula", "distance": [161000, "ly"], "rung": 3, "beat": "The brightest nebula nearby. The crew harvests its glow.", "fact": "The most active star-forming region in the Local Group." },
+        { "name": "SN 1987A", "kind": "supernova remnant", "distance": [168000, "ly"], "rung": 3, "beat": "A supernova humans watched in 1987. A Senders relay sits in its ring.", "fact": "The closest supernova seen since the telescope was invented." },
+        { "name": "Small Magellanic Cloud", "kind": "dwarf galaxy", "distance": [200000, "ly"], "rung": 3, "beat": "The hunter sends its first words: 'Where are you going?'", "fact": "Its stars are poorer in metals than the Sun." },
+        { "name": "Ursa Minor Dwarf", "kind": "dwarf galaxy", "distance": [205000, "ly"], "rung": 3, "beat": "A galaxy of only old stars. Nothing new has been born here in billions of years.", "fact": "Its stars are around 10 billion years old." },
+        { "name": "Draco Dwarf", "kind": "dwarf galaxy", "distance": [260000, "ly"], "rung": 3, "beat": "Mostly dark matter. Your instruments feel a mass they can't see.", "fact": "One of the most dark-matter-dominated objects known." },
+        { "name": "Sculptor Dwarf", "kind": "dwarf galaxy", "distance": [290000, "ly"], "rung": 3, "beat": "You answer the hunter: 'Somewhere it can't follow orders.'", "fact": "The first dwarf spheroidal galaxy discovered, in 1937." },
+        { "name": "Fornax Dwarf", "kind": "dwarf galaxy", "distance": [460000, "ly"], "rung": 3, "beat": "Six globular clusters orbit it. One holds a Senders star chart.", "fact": "It has six globular clusters of its own." },
+        { "name": "Leo I", "kind": "dwarf galaxy", "distance": [820000, "ly"], "rung": 3, "beat": "The edge of the Milky Way's pull. Beyond it, open dark.", "fact": "One of the most distant Milky Way satellites." },
+        { "name": "Andromeda Galaxy", "kind": "galaxy", "distance": [2.5, "Mly"], "rung": 3, "beat": "A trillion stars, coming for the Milky Way. Everything you left will change shape.", "fact": "It will merge with the Milky Way in about 4.5 billion years." },
+        { "name": "Triangulum Galaxy", "kind": "galaxy", "distance": [2.73, "Mly"], "rung": 3, "beat": "The last galaxy of home's neighbourhood. The Senders' chart points far beyond.", "fact": "The third-largest galaxy in the Local Group." }
+      ]
+    },
+    {
+      "name": "The cosmic web",
+      "drive": "Void-crossing warp",
+      "intro": "Galaxies hang on threads of dark matter, with voids between. The jumps get longer, and quieter.",
+      "industry": "Galactic siphons",
+      "research": ["Filament surfing", "Void endurance", "Unit hibernation", "Expansion models", "Senders language", "Hunter accord"],
+      "steps": [
+        { "name": "Bode's Galaxy (M81)", "kind": "galaxy", "distance": [11.7, "Mly"], "rung": 3, "beat": "A grand spiral, calm and old. The crew rests.", "fact": "One of the brightest galaxies in Earth's sky." },
+        { "name": "Centaurus A", "kind": "galaxy", "distance": [12, "Mly"], "rung": 3, "beat": "Its black hole fires jets a million light-years long. You stay out of the beam.", "fact": "A galaxy with huge radio jets, still digesting a merger." },
+        { "name": "Sombrero Galaxy", "kind": "galaxy", "distance": [31, "Mly"], "rung": 3, "beat": "A dust lane like a hat brim. The hunter follows, closer, no longer firing.", "fact": "Named for its bright bulge and dark dust lane." },
+        { "name": "M87", "kind": "galaxy", "distance": [53.5, "Mly"], "rung": 3, "beat": "The first black hole ever photographed. Six billion Suns in one shadow.", "fact": "Its black hole was imaged by the Event Horizon Telescope in 2019." },
+        { "name": "Great Attractor", "kind": "gravity anomaly", "distance": [220, "Mly"], "rung": 3, "beat": "Everything nearby, Earth included, falls toward this. So do you.", "fact": "A mass concentration pulling our whole region of galaxies." },
+        { "name": "Perseus Cluster", "kind": "galaxy cluster", "distance": [240, "Mly"], "rung": 3, "beat": "Its gas hums a note 57 octaves below middle C. The Scientist unit records it.", "fact": "A black hole here makes sound waves in the cluster's gas." },
+        { "name": "Coma Cluster", "kind": "galaxy cluster", "distance": [321, "Mly"], "rung": 3, "beat": "Over a thousand galaxies, held together by matter nobody can see.", "fact": "Where dark matter was first proposed, in 1933." },
+        { "name": "Shapley Supercluster", "kind": "supercluster", "distance": [650, "Mly"], "rung": 3, "beat": "The largest structure nearby. Even here, no one answers.", "fact": "The largest concentration of galaxies in the local universe." },
+        { "name": "Boötes Void", "kind": "void", "distance": [700, "Mly"], "rung": 3, "beat": "Nothing for hundreds of millions of light-years. Power runs low. The Engineer unit shuts itself down to keep the vault cold.", "fact": "A void about 330 million light-years across with very few galaxies." },
+        { "name": "Sloan Great Wall", "kind": "galaxy filament", "distance": [1.0, "Gly"], "rung": 3, "beat": "Out of the void. The hunter joins you: its masters on Earth have gone silent.", "fact": "A wall of galaxies more than a billion light-years long." },
+        { "name": "Abell 1689", "kind": "galaxy cluster", "distance": [2.2, "Gly"], "rung": 3, "beat": "Its gravity lenses the galaxies behind it. You use it as a telescope to find MoM-z14.", "fact": "One of the strongest gravitational lenses known." },
+        { "name": "Bullet Cluster", "kind": "galaxy cluster", "distance": [3.7, "Gly"], "rung": 3, "beat": "Two clusters colliding, dark matter passing straight through. The Senders' road is here.", "fact": "The clearest evidence that dark matter exists." }
+      ]
+    },
+    {
+      "name": "The farthest light",
+      "drive": "Senders' horizon drive",
+      "intro": "Past a certain distance, no signal from home can ever reach you again. The Senders built a way through.",
+      "industry": "Vacuum harvesters",
+      "research": ["Comoving charts", "Horizon crossing", "Early-universe spectra", "Seed preparation", "Senders' archive", "Genesis protocol"],
+      "steps": [
+        { "name": "Phoenix Cluster", "kind": "galaxy cluster", "distance": [7.3, "Gly"], "rung": 3, "beat": "A cluster still making hundreds of stars a year. The vault's sensors wake, as if they recognise something.", "fact": "Its central galaxy forms stars hundreds of times faster than the Milky Way." },
+        { "name": "El Gordo", "kind": "galaxy cluster", "distance": [9.98, "Gly"], "rung": 3, "beat": "A colossal cluster from when the universe was half its age.", "fact": "One of the most massive clusters known at its distance." },
+        { "name": "Hercules–Corona Borealis Great Wall", "kind": "galaxy filament", "distance": [15.2, "Gly"], "rung": 3, "beat": "A structure almost too big for the universe to have built.", "fact": "Possibly the largest structure known." },
+        { "name": "Cosmic event horizon", "kind": "boundary", "distance": [16.5, "Gly"], "rung": 4, "beat": "Past this line, nothing from Earth will ever reach you. The Senders' drive carries you over.", "fact": "Light sent today can never reach galaxies beyond about 16.5 billion light-years." },
+        { "name": "TON 618", "kind": "quasar", "distance": [18.3, "Gly"], "rung": 4, "beat": "One of the heaviest black holes known. Sixty billion Suns.", "fact": "Its black hole is estimated at about 40–66 billion solar masses." },
+        { "name": "Earendel", "kind": "star", "distance": [27.8, "Gly"], "rung": 4, "beat": "The most distant single star ever seen. Probably long dead now.", "fact": "Its light left when the universe was under a billion years old." },
+        { "name": "ULAS J1342+0928", "kind": "quasar", "distance": [29.4, "Gly"], "rung": 4, "beat": "A huge black hole that grew impossibly fast. The crew argues about how.", "fact": "Seen 690 million years after the Big Bang." },
+        { "name": "GRB 090423", "kind": "gamma-ray burst", "distance": [30.0, "Gly"], "rung": 4, "beat": "The death of one of the first stars. Its afterglow still flickers.", "fact": "A gamma-ray burst from 630 million years after the Big Bang." },
+        { "name": "MACS0647-JD", "kind": "galaxy", "distance": [31.6, "Gly"], "rung": 4, "beat": "A baby galaxy then, a grown one now. The Senders' archive opens.", "fact": "Seen about 430 million years after the Big Bang." },
+        { "name": "GN-z11", "kind": "galaxy", "distance": [31.9, "Gly"], "rung": 4, "beat": "The archive explains: the Senders were the first life, and they sent seeds forward in time.", "fact": "Once the most distant galaxy known; JWST found a black hole in it." },
+        { "name": "JADES-GS-z14-0", "kind": "galaxy", "distance": [33.85, "Gly"], "rung": 4, "beat": "Oxygen already in the first galaxies. Life's ingredients from the start.", "fact": "JWST found oxygen in it, from 300 million years after the Big Bang." },
+        { "name": "MoM-z14", "kind": "galaxy", "distance": [33.9, "Gly"], "rung": 4, "beat": "The oldest light, now a grown galaxy with a world waiting. You plant the embryos. The hunter asks to guard them. You decide.", "fact": "The most distant galaxy confirmed, seen 280 million years after the Big Bang." }
+      ]
+    }
+  ]
+}
